@@ -37,45 +37,45 @@ import{S as k}from"../assets/vendor-JeYrK-Ef.js";(function(){const t=document.cr
   width="255px"
   height="291px"
   class="burger">
-  <use href="assets/svg/sprite/symbol-defs.svg#icon-burger"></use>
+  <use href="src/assets/svg/sprite/symbol-defs.svg#icon-burger"></use>
 </svg>
 
 <svg id="call"
      class="call">
-  <use href="assets/svg/sprite/symbol-defs.svg#icon-Call"></use>
+  <use href="src/assets/svg/sprite/symbol-defs.svg#icon-Call"></use>
 </svg>
 
 <svg id="close"
      viewBox="0 0 24 24"
      class="close">
-  <use href="assets/svg/sprite/symbol-defs.svg#icon-close"></use>
+  <use href="src/assets/svg/sprite/symbol-defs.svg#icon-close"></use>
 </svg>
 
 <svg id="donut"
      width="302px"
      height="302px"
      class="donut">
-  <use href="assets/svg/sprite/symbol-defs.svg#icon-donut"></use>
+  <use href="src/assets/svg/sprite/symbol-defs.svg#icon-donut"></use>
 </svg>
 
 <svg id="logo"
      viewBox="0 0 152 34"
      class="logo">
-  <use href="assets/svg/sprite/symbol-defs.svg#icon-logo"></use>
+  <use href="src/assets/svg/sprite/symbol-defs.svg#icon-logo"></use>
 </svg>
 
 <svg id="telegram"
      width="36px"
      height="36px"
      class="telegram">
-  <use href="assets/svg/sprite/symbol-defs.svg#icon-telegram"></use>
+  <use href="src/assets/svg/sprite/symbol-defs.svg#icon-telegram"></use>
 </svg>
 
 <svg id="vk"
      width="36px"
      height="36px"
      class="vk">
-  <use href="assets/svg/sprite/symbol-defs.svg#icon-vk"></use>
+  <use href="src/assets/svg/sprite/symbol-defs.svg#icon-vk"></use>
 </svg>
 
 
