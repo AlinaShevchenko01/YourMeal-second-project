@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>YourMeal</title>
+    <link rel="icon" type="image/svg" href="/YourMeal-second-project/assets/icon-site-Bd2Dl3Gs.svg" sizes="16x16">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script type="module" crossorigin src="/YourMeal-second-project/js/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/YourMeal-second-project/assets/vendor-JeYrK-Ef.js">
+    <link rel="stylesheet" crossorigin href="/YourMeal-second-project/assets/index-CMDgvVIR.css">
+  </head>
+
+  <body>
+  <header class="header">
+    <div class="header__logo"
+         id="logoHead-container">
+    </div>
+
+    <div class="header__wrapper">
+      <div class="header__inner">
+        <div class="header__column">
+          <div class="header__image"
+               id="burger-container">
+          </div>
+        </div>
+
+        <div class="header__column">
+          <h1 class="header__title">
+          <span>
+            Только самые
+          </span>
+
+            <span class="header__title_accent">
+            сочные бургеры!
+          </span>
+          </h1>
+
+          <p class="header__text">
+            Бесплатная доставка от 599₴
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="menu">
+      <div class="menu__wrapper">
+
+        <div class="menu__pagination pagination swiper">
+          <div class="swiper-wrapper pagination__wrapper">
+            <div class="swiper-slide pagination__item">
+              <button class="pagination__btn">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOESURBVHgBtVVLaBRJGP6qq3smmVcSzcwmuwlulp3NsmYfLLKHZRcWspDLPkA8evDiSRQPXgIKKqIgCnrRiwcviiCKCoKg4uMgQQ+KYiJqjNEYw+Q1TCYzk+6uKquqnUn3OGN8fsNQ1VV//d///fX338BnBqmzbjw6t/fv5enOowmTthOxuDGTKzxMrlrXjY8goPbw6ZIzNWv6F4UQMAxDj8Si4tCxiz1b9h97ILc43oegOHKG88x0Zd11HRBCYFlhZMafobXtK4+QCxaONrLRQvFGImQOpH5d178kgXPveL9dKO4OGEjnKuqah5Ui7glgXIj4D107SFPvTsVftjECJ0JUOzcMivHRYS/SGs7zuaweZ6cmdNpUlJw5ZH5oZNuds3t+8dsGCITL9Mg5Q0dXOuDUoBTZmYyex5ta9Ni8LCVtuQyXeD9C6Lcr09frEvgTxl9Ln8vN6g3OGFqWf/GGqlx2RmfEtCwvCQtOzO8yUClGLAIxRwQhi1TxpsiiwqogFBIti/tMRtWQiBh1YtZzUbplCD771sqrCXltcGAh3uuQsq9qBWqBHNnfiVV/TuPn7jzqFI/nUJ50BcH9+xHcHEggP0+RbFZ+n1ecVyvA6U0rN8iiOKguy14w0ffvICh1ZKUIUJniUsnC46Eknj5p1eSWyeGPQd4NM0269p99d0+U14J3QEmvZKRqHgq7uHLxO4RCLvJzDTBNpokUKOUVyX6owIgQ/8npiZoK1PPI8STPZw18COIpga/XZFSAvKYCFdTVS4347Y8ppLuKOkbXxTvBkCm8fjkFVPWmagLa1hIXQ7ejZOg2UChSxKIM3d/PYMU30wg1unAX3nSez0dx4XwXmmLKt1bAynuBFJ3Z3HNBvgN9qAPGvNS1f5lFumcSscQCzp/8Ud9PxUbwa6sPDP5VSwGZyJV2pKKk723lqTA+Fpb/jteFXYBsuBrykQ88LvTD9x4EFLBnZ4U9mZPVgA+CQQxBW2OEdv5PaikAy8+Du7Zu0arHlJtacX4OkVhCz/3rCrZdkqXcoJuhw2x5MFiB/idSFqSaWaJ5max3iqmJF2iMxisNTq0ruI6tx1C4QX8XMi9GvbNhqy6BGCu4uySJKJMw2UGT7R2eoWw2ky/HfJ1UVAb10Wlt03YitKJ9O4JRB0DF8KmtsituJ0tcdDVkWxKDk9mNP/2+/jCW+E5/UrwCMVxhb5eqa94AAAAASUVORK5CYII=" alt="burgerIcon">
+
+                <span>
+                Бургеры
+                </span>
+              </button>
+            </div>
+
+            <div class="swiper-slide pagination__item">
+              <button class="pagination__btn">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMNSURBVHgB7VRdSFRBGD1z7967e3d1d11/wAwrJZLoIZKol4x+XiN6CoxI7SEr6CEofTCl0KAgytSKfg0VoyiijCCDCJTNhF7ySVTIstJ10/25a+vdO9PsbtLuqrvmswcul5n5vvPNOTPfACtIAbKUmOtHULBjM2plgjyR4mXRaTTxebqE3JQFhJ/tGA9MIzM21mgAG/eibMtZtPEhS0qQZE1034eXk2fZbZj5MIxNNY/gyMtFfUAD0hW03qzEGiwXFbuwYaQFdPJhZIdxSt9ewNbhZlBXG/ypeBZVUHMQZxgFaXyG7UiwYW8t+h0WsN9+WPCfBYRPzSgJvgK1WXHUzp2vPg4n60ddogqNwksZUiI2ibA+1E0OoZZPErMVOt+hGF5gnEiwYDRjP9YhenvI91vQlSzAbcY7qxH9OXtQ/ZePLaaAuQZxzmQCmrqQbd4HKeAB/eXiWTyNqsjvv4fycKCnG2P2QhCjDWSVhN1pFFW+19DdI7iWwPlvMPgEnaIIYWAIh893YjJcUNVQyv/6lCsaU2TDHd9zUAnIFdJBP39F6YkGZAz9QLmcBWYawqmxHjQsaJH7KdwkCIejNN7rQ9uwuvEYRomJO6Vzp3L5/ZUBuSRiX2yzkcB76DyZKTuj1mKenAXuVEcfvmVVQLTY+bIUPY8vFI8xv5OZR0MXm4XQWoPCOAVT096Z4ECPcfZSPZEyMycYC7sQD6pTO2X8NHgBg8i1CghEDkf1gVztAJGN0EJMJELIKhkknywa9AyOSIEJ1+S4FtJzYFFAL1YBY6N8P0memjCxxrd6pZXLlhYMkWVpOjvTES3gdDrL8tcWPIgloJUHgDTr/EyDAcLlu0CIRQstAo/He3Jj0fobcxGCx+fX/H5ViC3CnN1g7bf562YC4V1HGlqAmWBS4jAsZkW326yGCE3MPJn2+jRVDYjx0Qoid8HvT0kchllRaIY9Qh5puLhGs1vTTarP80YJd9sc1Bn+qSnJZcnA0i2Wj7HkiQriUFxcbJZl2SSKYsoXhzFHqLf3hQ8rWA7+AHSIEAiZqo4kAAAAAElFTkSuQmCC" alt="snacksIcon">
+
+                <span>
+              Закуски
+                </span>
+              </button>
+            </div>
+
+            <div class="swiper-slide pagination__item">
+              <button class="pagination__btn">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQISURBVHgBzZVfTFtVHMd/55y2t6VQCpTh4j+wpaOuc0yIiSMS9GGb7mVmmSa+yIuJGrsBC7owzaKikkxN96DELPNPzJZsQ+MSfRhui05lmVFxMFqwLcicGeuGlEJpe2/PuZ57kNraspUXs18fmtz+zuf3u9/f93cKcAsGHj7evfHywMFT4z8eOtG7t7WFP0PP2qtWTWxtnP19ayOLb9/YreVpyQhWFkSe+EJRwtNZ5yjBkeAebynL4BFCDmw4+UvbSgqQ+HifrFyL4m/m3wMGKbhbXw+1pBn8L3sBEZyVXCHpoearn5CuQDiOT3wuk+syPjb7Em+TiIcjyX6g+wcF3FCWBKcnCHN/mGHyo2pI0FRCyymkAI6HjsssPIOn6VQajlMIXPurQCUqKFED1O32wYWu+4AYKfB6zHN+8jaRd1N4sE9m16Mcw+Bc7NNsuE4FlSFw7x2CQK9TwIFRqH6tbfLUzExU6HoDOEqMHVVYRCajia/hbOxjrnoiq3NEGNQ+FwD/O2sBVH6C812vewBjZK2wFH3Yf+5iFN8IDpEE6Yt0cK1Pi9M4BWk4jesEfOxAHe+c/0AR+DvD4Gc/AEKANj3atHM5iVBy5IhCI/NkONHPNcc5mhvKE7Bu3zCEDjoAG9g/8KtCssvKBZFfajaW5RRoaGjQyxcPK6n5uND8t+R3OXCmYKhrG4OhV9YBTZIs+CJwUfWBbwePiW6X4A6HQxr6bN+CTtbhsDIOA7FPIKFGs+BFt8fAuSsIo+86ITFlyoEzlcIO61tAVtuo8a5twqFpmw6feTtGr1zDRyJdgFGuFZnMO+8Mws876wFhNQ3XCEZkgSbz01CpuwdSUkq9f0tX0RJXFDja88JmdmWanJnrzQvXlmhNewB8Pc4suNa5DhngMcuLXAoEqompD7V6JZ/Pp2QVeLC5/gnxiprPYJkl6lwP2ERzZHFKzQJOzCYmuZ/SeGrmXMWQZxeSM9r3HYb1yy5RPjhTGbilTYCtxcyYB66F0MNhs/gb3fY2m3onQt0+3jnkWaJ/Ndeui3uNj0CLxQPIKlHTmicN+eCZLkKR84dCgT3eGu3i0pbI1TnC3eLK8XkRLoMtJbsXZbFZqdG+3SDUXSbEG+woKyt1+0d7+ISRtkSujjEIvF+7WP8/sjQXPwMmVFIQPD2DVx+ovrr0Z+F8PpSxRGqOz23EDnhVOeNw6WZwLYSLjARLC5QJFef+NIOuJMUHTMHV3Q6YnoVLfP0x/zxc7AG1Us9MNY9rnVMoIETXg5vrvZSqu9K68fvc/mZ7lFBqzchV9VUVYKjepi8UroWQaMPJXzvWlprfqJB0UCnpZz8ITa22NLaWH/7y+5YwRiemKTt9KfxXE4frVgL/X+Jv8fDrPZF8H7QAAAAASUVORK5CYII=" alt="hot-dogIcon">
+
+                <span>
+              Хот-доги
+                </span>
+              </button>
+            </div>
+
+            <div class="swiper-slide pagination__item">
+              <button class="pagination__btn">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANoSURBVHgBvVTJaxNRGP+9mWymTdOkaVxabKwbWo27FlGUKgRFVIqIIOJBFPQgqKAHDyIqBvsHKB4UNxARTxZ7qBa8tIIitWJt1WhLSkybtKZJkzSZmeebSTPdJk1E9AfDfPO+5fdt84B/DFKgHfey5fUpV3W1l1IUZQ9T6VSaSvRSzdKF1/+GgHzv9SdD4UFDLgNHmV1cML9Sz0Q6LTPkgc/34/ZMwWUwPd/t63mipctLIIA7hgIgCMKBPyXgLl29uiWRiBO9Tod8DyOA1+vdzPwmVZtzBh6Px373/sPw9K7mBmHR6vfvLWttbR3MSyDrbh20nyu3mRtQIPpjuHDykV+2V9PSTQy4axMsL94gJhtcO4w6zlQa15nNKBSpeKIXUzZJncH25Sh6egWRtsc4Ixsdq0Oz0di/Q9ZRqbDfJRhJBqeeZSsgDSdwWm8EVlegof1ZFScN9mFRRXKOkQ9jxcYAvn6ejW9fymckCAyJ2gRnD6Gy2olrYpplS3Vk2RzdjZ8hoMopbDbNCkCSgERcj3z4FYmFNAks/IShFC9g28DD4RIwGpHbk2mR328DR2ZeqbaBWEyTYKu/5vjQe7ZZawywuEQIiaCyXxKrKNY5D8NsUrMSwOjYvAnbx1QywbKik9YwEEB8TJSPaVZA16514WhasMtf848MocTVC8KoP15eCSpm9iC4mBGbMt6bdh9FSWl5prwJkInlwDqbhegXHZCTF5UKRgShm71qZc7eBzaISYfCz5tE1Tkb3DHXBUuJncUWp3aDzS+TdCocQaTrSYd16cHlCsFwSmwp1vO1GSsW2DjdWWKWnAAYi0pARhuhhWjUgpFhK3yhZGNZ1ZJ2tUV31ro8bru1CTnAMb6edaLyFlnL9tR/gpAWJrRGzsuMjre1SoYc24YN518pvVUqaAvHPjCCXPFBKAEZazfPS3h0bx5WupNY4e7HQMiMpucVMBhSTOvLEqqzV4V3O1fRnEvIFH3u8bbNne2EyH4OkY2Q54Vp5kUmHXWfbeZlT/UuMnAEo5I2hWgYP1/vOQyrzcn+idw3fUpCOOI/PWit3GtTCUwcxwhETQdSswHlu+sV2c/ysiLINkbKSaAncNBSq1eWVYJSA085on1907p9QLVb/Y7SCJzpTu3oLEIgGr9ZWbztIv4HfgNpiDxpBVBSUQAAAABJRU5ErkJggg==" alt="comboIcon">
+
+                <span>
+              Комбо
+                </span>
+              </button>
+            </div>
+
+            <div class="swiper-slide pagination__item">
+              <button class="pagination__btn">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALbSURBVHgBtZXPaxNBFMe/M/sjydYkbRPzq1oo2mKLKHgQkR6UIuLJgwqC0oOCZ7UnD1a8VVAP6kE8WPHSCl78C4rUWhA9WW2rB6VFtJpfpvm12R/j7G6aorhJ09B3mZ15897nzZu3b4AtFrKRPY+unBo4NLDjhSwJuyghSOeKH5/PvL9we/LVO67XWwGQz09HllLZUpch6EQTC9yAwKN2gFGdKbL0c/+lewm+z9wMgM6PX82u/jb9c/vGIeq+moIRA30Lp+3vcFBJ9g7fiVjL/3Xi5n3ixpmz2XzJv9z90nZuMgbTNLG9swOJcBS5wSmY3hKSuWJo6u7F465Ruin6E/HH1pj3f4PBHXdFwohvD8O6AwsEkyJ/4A0fCenqbJ908yO6KkTqCSkfMEQz0FIEPqMAyrO04I+jROXaPrX7K9RkbxDNnkDXdEiiihA0BIwKfFoB2zjEN0usS/gr48xkaBqwd+gIdL3IjQFfZH3dN0sRuiZCnnNMrfQlehJoGmBqFST2jDrR/iOZdAbBhwIMj4rdbNCGNA1wKDmw9gkOkSC1Vdc4r6KqPEMm+peGYZBKXRf1AZawAoc84R/+6hyIxWLoGDkJVjYamjcG2E7LYIEHPPo4rCMEzx8DBMeUENIaoFwsVJ3oHDKGthMHQQOKrUutpBs2m4YAxR9YnzAd0f6jtWko2lm3RDcEMA0DzG4Thn0SxiuGMadqKhUNakltDbCaSTkp4oEautOZvT6npGRZglfxtgbwKG32CQRRBBUEe02UnVaxms3bupYAsscLSimWv3yqVYymlu1vySM1Mndvdmti5d6SnT19tWjVcokDKJQ2H8/c5k5A1uov82vFdrbm3BqtuQ03TCR/pCHJYtMAtpwvj1ljKJqoVY0oSXg7/RpC9S6sGEKRdhaMBW/CPVJXEdjis+smFUY5wXqKsTg9wx8c6nTQ7qj9N89/T18+fO7WfdR5l7dU/gAFSRVTY/SZywAAAABJRU5ErkJggg==" alt="donerIcon">
+
+                <span>
+              Шаурма
+                </span>
+              </button>
+            </div>
+
+            <div class="swiper-slide pagination__item">
+              <button class="pagination__btn">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAViSURBVHgBvVVrbBRVFP7uPHZ2u91H26202xelW1pSamp8RWvE8A7aorSABCWYoCUkYvpHEqOtKBqRP0YjEo1BMNggFoVGpEH9YaohJEDBCH1Ttq+17Xa7bbe7Ozsz1zuzdGkV0ZjI3ezu3Jlzzznfd75zBvifF/mH59z++ufmV6wuf9eZZlthlmW7Rgg0yoV8cuzk23sPv/7J0R86/ksAru/7D1dm5t11Kjo2AUqZW8JBicnGEUEUE4a826X+1tK6+d5N9Y1sq/ybACTY+VW7MBb06NfEYofc8BrEylooqmYc4QUBvCiAsh1VVP0MjUlip7NsS7F+fbsAJOY9qcpDIwScg5lOQDnbCM6eDq50KZRwyDgS7vCiv+EUOJOIorrticMmdzoVcyoFdqklqJjlXAhcPNSuOyeRkyCB9exWMvgHnoLmLgNvvkmLJd8NZWoatpIClgSFevUn418eHGHoj7XNTjwRoPn97Rv56YiHMkNqXgcqPGTYxVgNOvcdxMUtr+iExTNJSkLZgTq41y0HMZmh9V6C2v5znILhgOfc4don/kJRtL9JCVxp40OTE8jMyWcJqXG+mbPWbXVIffgezKtaatwTlWZWXQuotJqx6ANxZYNTZAz2dsFqd8JVkE+Fgiper4f+g+c3Llu4cvGCnZLZAnuKC8ODfYiGw0hmxqosY96aR2Ff7IGm3QiKa6DqKCCWsARs8A96MTE+hszcBTCZJKjTEWS70j7/tqU1YCDovvBZg5uQp3s+aIC7egVMaU4mBYrB691ITc9AktUGnbqbMtWPCQhPT2FsxIfsvEJdyhj8shnJLBF7iQejitqYV/5CtVGDLJNYEfb+jrB3CG31+xnVBPonK88DnufR19POstcS+qMM+EBvJ3hOQFZugZEMOA7Byx3wfvo1E4SEtHTncqNexo8oWs3Z85CUmwH3+lXMAceaYRtLVoLJvAG5BUsQGPUhGgkbSMwWK7Lzi0AZkNiJfRAe2wriSIe9tBD2uxdCjURhsUiOmyoiesMoyKvZAJMrle1ZtilHwchk4l5i9A7za3xBOGNPOBJvKVUx9mD1ydpUDfsiN0j4UEI+BoIIECQc74id/gh0yg/Tpj1MVuOgqUcgh8cw4uuHe74HaiwWLzKjzdt1FenuPEhP7rpBHNNLiDlWvgMVyyFHY6EEgvGx4Bk9A3FVDYT7K0EjU0YdBnt/hcru5xaVzBkAnGBiFC2EpsQwcL3LoI1BAZKqQZ3HGeqlGIjKTTfCAp4s1/mywtydenp8aiZGBryIRKaRkZ0PU5IVl3e8gckr3XA+WGogUI/vgdZxFlLZSqSkuuAf9iE0OQ6bIwVUY7RyTtS/07Du/NWesZlGI7GuRtXf3UNCk0G48woM1ehLi0bR8ebHUJi2i/e+ZAQgvRdAWGNxxeXMGRshrCl1xEN912C1OZCyqEiTcir4OZ187mBtRXHRohOMX6JrmjMng0anjcoSgWfQeMihEBLj2mJjxYuxmbWZVXIxqHWnjp/VXKEt5y4+u6b2wJE5AXRqg13H2gT/RCFEyZCfXgtTdR2j188sHXPeB7qKqMa4j7UymKyrpWXGM0US2x1lW0riRbnVuO5rUmWfn722dIri859MvccyrIGi8PFZJJlwacce5Gxdi5T7ShN2piwXFbPX/u24NppUZNzJAtcRVz0xmo3SKYAFmcnH/8sliA4bfN/8GO8BEKqk2juZc3G281shmFn8+S/eqip5pKRBHfKTGbvZFEWHA7DkZlAxSUJ/j+/x+atePI0/vc1uFyCxaqpWFL786jO7s0SxkhDNqkOOimIwMDp1pqm5ZdeO3Qev3crxHVt/AHNQNQd68QscAAAAAElFTkSuQmCC" alt="pizzaIcon">
+
+                <span>
+              Пицца
+                </span>
+              </button>
+            </div>
+
+            <div class="swiper-slide pagination__item">
+              <button class="pagination__btn">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALfSURBVHgBvZVNaBNBFMffm9nsJs0m3cQWKVZBtK2GFlS8C55EjyLiQVCRnvRQEOqhZ70V8SRYtFfxqCClgtCLhSoeWrSlpd82aVobk6bZ7u7sjLupCUmaTVdB/8uww3vz3u/tzNtdgH8s9LPobV/P4JZuUVWhGuMQkwiosoSqLSAcDBBVCFAoQZkgyE5CWSIoRUMSnhn4hJIfAJXgvhYOoUSRMsaAcyYERyBIuME4UkHQQiEQBAHhXAiusxjrC7CZybF8YTd4q3+QZ9eTxDINfPXiCQQUhZbWCHc3RHFWzKwqxD/g5tBSyL1ffcgnmg+1nEsuzZNksPv8x6mJlTZFPtnRKnfGmsipIMUEkciJAMH25iYadWPqnQHuFbTfbn4e5uvJNTMckQPxCw8I+FDVIrZ0WqTnu557gS1mC8ZMFLopwGeDFAH5fM9j/q1TsFXT0lLsjjPn9lyXXZNEsFhk83DbMZIt6Hj72tmWEpgvdnE3vjRsJ37re+JpGaCqkwM5FYecbAE3gGVssNOMmJMdrAKCIQGtttNB3Abx8vWXjeJTTXVYbI0VY34PkY3gs/iRr31lgCNbOzrTq8fIaNXzbfMypPf6xePWz22xsbaCkkzSpeQix2llSDaKI/H2mXtuzkpAcQu0xOwlQ6ML9SCpVSMt3FYnRNhMiVqT+5NbUbrY2j13xZnykq3uYRrTnVncsiNVVhX5rvlIB9NSQqRfElypchONFKTErAo1HejZCcZ4SPCdGjKaoP9wg+QqezDsjMs6ray8JM8XTSK6MHhNAc6G2qYL0qsX79XM6+XxfFmyBiyDT2XyMOfl8wRsZmEEfMq04cMfA5YX4B341NS0dzGegJExGAefGn4DY16+ht+T3fcgeEXToVPOTso95AqbM4/f8M7T8IuIIThQSlNjf0OA8ycTcIAohb8H5KyDWzWz492irhr+0bYtGG3W4G7Z4Ow0KUDVyaWId4v+F/0Czso009sRkdsAAAAASUVORK5CYII=" alt="wokIcon">
+
+                <span>
+              Вок
+                </span>
+              </button>
+            </div>
+
+            <div class="swiper-slide pagination__item">
+              <button class="pagination__btn">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASmSURBVHgBvVVZaFxlFD7/vf9MmD3JLFkmTGyaabQpNlAQokX0IRWSKqVQSLTqoxZ98KEomAotGhdUqFgUH0SQSqyID4pxK5hgXwRLItWarbVOm8l2J8lklsx27+85/525WTRVBHtghp/zn/8753xnuQD/s7B/uFeO9URueyDqec3j5AdUYF5SFnQjoxvi87e/nT059LM2+V8cKB88sftAi982lMoZoAsh7eaX09Do9wCCQ7GkQ5WdQ9DNjZ+upPqePjv9GZqU/o0DNnKiY2IlXWxlCmNX4svQ0lBjXZZ0A7iqAF5BPJGC+lo3qYWNs8nu1y/dQeebOWAXTnToiUxJ6hEDKHghhDyTcEWBOcwk4HNaj/Ba3gecXNwzMMZRZVhUbADnXx+/87IJzqBQ1DFaIQPKFUqwlFqTRpPXE1Bf4wJFYTC3lEaqDEhmcvJOy5bYSH/HbxtxrcNbR1sP53WjTcWHjLLckJujilv5toRroIQ1oAAa/G6wcUVmJcHw7UqmFP3oyfauvzi4a6dnEHll47EEFJFnbSUDdr6eYK3HsYldqoNhmKBupx1KmAllR3Vr8vOvoByiRDi0N7BrYbWoGEhmtKlWPg4HfRBbWK2URq/iyoeDw3PhM8NXwwG3/R2si0BsmMCAMC7gGAy9pXqtZHTA9t4BFS9Dx/cMFnTo1TEKMlxOr4HXWQUqpk5A536IhQYvpjTYIH37GgK99/rn80VdoZb1uqpg+sYS7AybTvD36aHTvx5Ryuk+SG23kMyU6XBCXEvJc9BT9e5WcJLBi7MaZnXWgbMwm0gjXQKa63zYGLrsKq+Td1kU2VXFRV5piKQSnXkwA5KTn4wPwDby/oWZ541yCxNNKlKbzZdgGTsOMXyWAxJKc0ZbleAT1zXwex1S7w84t8OHfI5ZZad6XI0vQTVSVVt+aznAKJJ2G4dIyEdnaEUeaR2QPN7Z+Op2Dp47GOlXqEXRNI/1a66vtt7hvkpbDpI5/TxRpONgBa6pwAvrIAXDeKRvnyewBZuRbjGVP7aWK+A8eHAWmGwKVh55LMUX0pD+numJtNwf9U4TlTyPfxhEwWGuAK4yNDZEAIv9wrk/Xg4FmXiss/EVnJWj2BzK5WuL0BbxS6jJGwmcHVUW+8z3sV3fja1OVeYVR3yvvpLVN+0mmmmqR3O9Dxx2m6TP5JvBWqEIsfkk3B4xk5tbzkAdrhDqppDXZnSeGlVJX94BIGJasdvrYEOUYzi4IJUziyEZXSpbQDBNAksX6IhoiTYFLM4xUQmOBuLHqVTvepDrogz3d4wns6VoIzlA27gWMr3jRmVMSH6Z2RSmXhFQN8EhXWtA1m/qkNLxnjcu7aEyWEUui3HfwFib32UTcYy8Aq5yA3qO/IK7RjEnFDexjRfN6AwsLB4r4H63TSB4ewV8qwMZ1P6XRlU7RkGpkiKfs0FizolDVI5aKNC+YwqzMJ/O7tZJKXxOPrX/xdFN34KtFG0U9c2HWw/fHfV8vJAsMmCb7QSUVzoGUe3iENPWuh99b+Ib2PI1u5kDSw52BKNPdTWcwu/EQ3YVXKQzBEtirc6PTK8+e/rL2O9/B3zL5E8b4gptsJuX0wAAAABJRU5ErkJggg==" alt="dessertIcon">
+
+                <span>
+              Десерты
+                </span>
+              </button>
+            </div>
+
+            <div class="swiper-slide pagination__item">
+              <button class="pagination__btn">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKzSURBVHgBzVRNaBNBFP5mdtMkTdI/LW2aFGqrgkiJ2ip4VEgvtRdFoQfFg961UPSmaBWkF4+CeBW8CIrgpUKPxVppa1t/wKJpbWzSJI35IZvdnXGSFE3aTbpRkX4wLDPzvve9t+/NA3YS4rOI6ZPgxWvqMUYqcWRUgziYkik90hSo+GcCOZAtW1aFeXm8GsFZXweebObY6sGcA/lAuRGPwiQejOGlZIdOawSpaGUULFXimc4gB1UUVV0vPYsBYx4//OU4VddAqi3dNzXiGAqB8r8SmOk7NDx93fCqrse9ap8KBtNGl6ZqcNzrtTOGe4RwGK2nRzwJYSb9qQB5dHB3UgcvW6+wotLlU0dVI3/bFZm89fu+Mo52SiXEohEoilJi4HS54HA4wDlHTNOu+sfn7xffb1cDLhPSrhGClW/LaPN48o6Koes6vgeDaG11o9Nuuy2OqhKAJvwpWQXutjboyQQsJ/pBm1tyyUGbeQ26tIjGpibRQjz3O5yb+aa6yGKxgKWSqHs+ARpP/OpH1n8OPCFewrVLIlfDLjXfptTbAR6L49PiF2QyhYnX1bkHtsZm8OQPEIfLvEB3r7Wzp5cw34DzIr1DoDtE+qnEhtOOEltCReOw8vPOsE3rW2yxk6cbbrkI7Zt8GAARfBYNQ5JlzM4tIBQKY37hg1gfAXstSK2jrIBRBnTU2XMmGg8MJmwZef/lXWBiPHDRSUyScNjXLQJmcLtb88Z6OiWemGxeIHJlcDS9tj7kfbavoLaXYmU5AGq1iWrXILIaQlbVxAxqKNzH11AJWwQsyfRQ8T4XrVxjha6p0N9Pw0U3KKvJ/EedGEdVAhlCPotP1+8TDk3NiplDkL47XNEZM5gLRqNCCpzvf9dglQ9IwulcMHSzhWdv6IxVHCsWiSoXXrxxjou3if+Jn9yn+t2hwD8MAAAAAElFTkSuQmCC" alt="sauceIcon">
+
+                <span>
+              Соусы
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu__container">
+          <aside class="menu__cart cart">
+            <div class="cart__container">
+              <div class="cart__inner">
+                <div class="cart__head">
+                  <h3 class="cart__title">
+                    Корзина
+                  </h3>
+
+                  <button class="cart__amount">
+                    0
+                  </button>
+                </div>
+              </div>
+
+              <p class="cart__empty">
+                Тут пока пусто :(
+              </p>
+
+              <div class="cart__tablet">
+                <div class="cart__wrapper"></div>
+
+                <div class="cart__order hidden">
+                  <div class="cart__sum">
+                    <p class="cart__text">
+                      Итого
+                    </p>
+
+                    <p class="cart__text cart__total-price"></p>
+                  </div>
+
+                  <div class="cart__btn-order">
+                    <button data-order="order">
+                      Оформить заказ
+                    </button>
+                  </div>
+                </div>
+
+                <div class="cart__inner-bot">
+                  <div class="cart__free-delivery hidden">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANZSURBVHgB7VVZaBNRFD2zJJlM2tKatm4RtyKI0CpSa9UfUXDfinX5UFFURFH0S3BBxV0oqBQpKAhaBTdExaogxX1BBBUt4l6TNrXpmjSZzHQy45uZpHXSSRH0Szwkc8l595773r33ZYD/AKimltZvpaWljChJqkaoBPibaGpu/aDZsCAIxLCK0p2Axp+DCra3txPLNAcC94hVRTF6oGvRKqK29vsPh12xhT8PeTR8EhYQKpZKfcdqDO2bhsHJ/KVq1D54g6+sVZCD49mYKmX1FzAn9BoN6QXISaGPOROxIn8QdiXz4wqwu2gl9lgm4HjOyVBGGbkIstELvpTlQ82w9eC9Ua0dNdY9yExP4xeOy3HjN8C6OmWWl5H8pe2ysZ4qcN40jErmTiwZNmvEkPQbZEa6euf0k0c9Um8gBc+snY+bkmQmJ0wVKhkpbBoMzk2By6Ok8xec5cMz7B2ksorG13QITzVrOUWB96hwebFWW7elAbZiw+9NFQ7l2bDVKkbVPk74XZPgMX7qMaplD+wBlFolz5+JbW2ZOEtK1OOmEmeKEjCgrSJX+ThjrBpPYmqyJkg9PILlTBRcgowZvUr4KQMKsYLL6k5OUYaUHCG+IsAXNKp2hTaJ6rbxFtbb2nFcUYgYCXDmQCKrdl09BzFuNByIX7jYC3Jb20gQQ/4e6gybAIlXMvtjq20KyrpKtHIKhqIZx3TxeFohQMRV6G1WAmCiryAW5SFjWjH6JOoT8ZvF9c3QoFv9OHxuM9FMnKD5IryQ9eaYkXSSZJBNpEYGfO7ZGKSPqYuHJxy0cIqfpLMvnoSiMA2tFIGzH1CUSt8FY8N6gqpHmHFPXFXZqVDunRsXG0dVZewpvwK+rnLmtWrx8acWmLaglWvuBH6iL2tp1Y5188k8O3R+X/kFcnA6NDJ8skTX0R4lh3DbGxnY8CGQDlfueCh8Pqpr7PCGstWyy+KtZHENzz8huP1M5I6vI1u9W8PqMa7cYryt51HX4X636STuxotgwOPxOMdMXxZuC4Yop8MOzuEAw7L3r1bsnQwg1RuKXrRp/zNRCBfKsoyo2EnKzanXTx2kf6myGXPXbHtKM2yeEAruv3Pu6HFCKegdVMmGXdtVWdlCHP0vb54u9Pl8Av4Z/ARmwD05roYwygAAAABJRU5ErkJggg==" alt="free-delivery">
+
+                    <span>
+                    Бесплатная доставка
+                    </span>
+                  </div>
+
+                  <p class="cart__close-mobile hidden">
+                    Свернуть
+                  </p>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+          <div class="swiper menu__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide menu__component component">
+                <div class="component__wrapper">
+                  <h2 class="component__title">
+                    Бургеры
+                  </h2>
+
+                  <div class=" component__inner">
+                    <div class="component__card"
+                         data-target="modal1">
+                      <img src="/YourMeal-second-project/assets/burger1-BmycPyt7.png" alt="burger1">
+
+                      <p class="component__price">689₴</p>
+
+                      <p class="component__text">Мясная бомба</p>
+
+                      <p class="component__weight">520г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+
+                    <div class="component__card"
+                         data-target="modal2">
+                      <img src="/YourMeal-second-project/assets/burger2-DmmHMVFz.png" alt="burger2">
+
+                      <p class="component__price">550₴</p>
+
+                      <p class="component__text">Супер сырный</p>
+
+                      <p class="component__weight">512г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+
+                    <div class="component__card"
+                         data-target="modal3">
+                      <img src="/YourMeal-second-project/assets/burger3-Cw-mbX_c.png" alt="burger3">
+
+                      <p class="component__price">639₴</p>
+
+                      <p class="component__text">Сытный</p>
+
+                      <p class="component__weight">580г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+
+                    <div class="component__card"
+                         data-target="modal4">
+                      <img src="/YourMeal-second-project/assets/burger4-B4tIjdqB.png" alt="burger4">
+
+                      <p class="component__price">480U₴</p>
+
+                      <p class="component__text">Тяжелый удар</p>
+
+                      <p class="component__weight">470г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+
+                    <div class="component__card"
+                         data-target="modal5">
+                      <img src="/YourMeal-second-project/assets/burger5-DOgMotHO.png" alt="burger5">
+
+                      <p class="component__price">450₴</p>
+
+                      <p class="component__text">Вечная классика</p>
+
+                      <p class="component__weight">450г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+
+                    <div class="component__card"
+                         data-target="modal6">
+                      <img src="/YourMeal-second-project/assets/burger6-DR9WO4RF.png" alt="burger6">
+
+                      <p class="component__price">560₴</p>
+
+                      <p class="component__text">Итальянский</p>
+
+                      <p class="component__weight">510г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="swiper-slide menu__component component">
+                <div class="component__wrapper">
+                  <h2 class="component__title">
+                    Закуски
+                  </h2>
+
+                  <div class=" component__inner">
+                    <div class="component__card"
+                         data-target="modal7">
+                      <img src="/YourMeal-second-project/assets/snack1-K1p8f8-H.png" alt="snack1">
+
+                      <p class="component__price">250₴</p>
+
+                      <p class="component__text">Начос</p>
+
+                      <p class="component__weight">220г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+
+                    <div class="component__card"
+                         data-target="modal8">
+                      <img src="/YourMeal-second-project/assets/snack2-CaCwvFFj.png" alt="snack2">
+
+                      <p class="component__price">245₴</p>
+
+                      <p class="component__text">Картошка фри</p>
+
+                      <p class="component__weight">180г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+
+                    <div class="component__card "
+                         data-target="modal9">
+                      <img src="/YourMeal-second-project/assets/snack3-DZChEV31.png" alt="snack3">
+
+                      <p class="component__price">230₴</p>
+
+                      <p class="component__text">Луковые кольца</p>
+
+                      <p class="component__weight">230г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide menu__component component">
+                <div class="component__wrapper">
+                  <h2 class="component__title">
+                    Хот-доги
+                  </h2>
+
+                  <div class=" component__inner">
+                    <div class="component__card"
+                         data-target="modal10">
+                      <img src="/YourMeal-second-project/assets/hot-dog1-BT6EhVlP.png" alt="hot-dog1">
+
+                      <p class="component__price">290₴</p>
+
+                      <p class="component__text">Домашний хот-дог</p>
+
+                      <p class="component__weight">250г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+
+                    <div class="component__card"
+                         data-target="modal11">
+                      <img src="/YourMeal-second-project/assets/hot-dog2-DAbYCUVb.png" alt="hot-dog2">
+
+                      <p class="component__price">239₴</p>
+
+                      <p class="component__text">Жгучий хот-дог</p>
+
+                      <p class="component__weight">245г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+
+                    <div class="component__card"
+                         data-target="modal12">
+                      <img src="/YourMeal-second-project/assets/hot-dog3-DJmEZCIa.png" alt="hot-dog3">
+
+                      <p class="component__price">220₴</p>
+
+                      <p class="component__text">Классический хот-дог</p>
+
+                      <p class="component__weight">215г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide menu__component component">
+                <div class="component__wrapper">
+                  <h2 class="component__title">
+                    Комбо
+                  </h2>
+
+                  <div class="component__inner">
+                    <div class="component__card"
+                         data-target="modal13" >
+                      <img src="/YourMeal-second-project/assets/combo1-VwDMIRF9.png" alt="combo1">
+
+                      <p class="component__price">290₴</p>
+
+                      <p class="component__text">Домашний обед</p>
+
+                      <p class="component__weight">500г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+
+                    <div class="component__card"
+                         data-target="modal14">
+                      <img src="/YourMeal-second-project/assets/combo2-CR4Qmkhn.png" alt="combo2">
+
+                      <p class="component__price">300₴</p>
+
+                      <p class="component__text">Комбо</p>
+
+                      <p class="component__weight">500г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide menu__component component">
+                <div class="component__wrapper">
+                  <h2 class="component__title">
+                    Шаурма
+                  </h2>
+
+                  <div class="component__inner">
+                    <div class="component__card"
+                         data-target="modal15">
+                      <img src="/YourMeal-second-project/assets/shaurma1-cCMna7SR.png" alt="doner1">
+
+                      <p class="component__price">250₴</p>
+
+                      <p class="component__text">Шаурма с луком</p>
+
+                      <p class="component__weight">400г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+
+                    <div class="component__card"
+                         data-target="modal16">
+                      <img src="/YourMeal-second-project/assets/shaurma2-BqH5iKuQ.png" alt="doner2">
+
+                      <p class="component__price">270₴</p>
+
+                      <p class="component__text">Шаурма изысканная</p>
+
+                      <p class="component__weight">450г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide menu__component component">
+                <div class="component__wrapper">
+                  <h2 class="component__title">
+                    Пицца
+                  </h2>
+
+                  <div class="component__inner">
+                    <div class="component__card"
+                         data-target="modal17">
+                      <img src="/YourMeal-second-project/assets/pizza1-BsJ_0GxV.png" alt="pizza1">
+
+                      <p class="component__price">270₴</p>
+
+                      <p class="component__text">Пицца итальянская</p>
+
+                      <p class="component__weight">550г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide menu__component component">
+                <div class="component__wrapper">
+                  <h2 class="component__title">
+                    Вок
+                  </h2>
+
+                  <div class="component__inner">
+                    <div class="component__card"
+                         data-target="modal18">
+                      <img src="/YourMeal-second-project/assets/wok1-C2hdKPDC.png" alt="wok">
+
+                      <p class="component__price">320₴</p>
+
+                      <p class="component__text">Вок корейский</p>
+
+                      <p class="component__weight">560г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide menu__component component">
+                <div class="component__wrapper">
+                  <h2 class="component__title">
+                    Десерты
+                  </h2>
+
+                  <div class="component__inner">
+                    <div class="component__card" data-target="modal19">
+                      <img src="/YourMeal-second-project/assets/cake-C8IExfTa.png" alt="dessert">
+
+                      <p class="component__price">220₴</p>
+
+                      <p class="component__text">Торт шоколадный</p>
+
+                      <p class="component__weight">180г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide menu__component component">
+                <div class="component__wrapper">
+                  <h2 class="component__title">
+                    Соусы
+                  </h2>
+
+                  <div class="component__inner">
+                    <div class="component__card"
+                         data-target="modal20">
+                      <img src="/YourMeal-second-project/assets/threeSauces-D9jT0_JH.png" alt="sauce">
+
+                      <p class="component__price">160₴</p>
+
+                      <p class="component__text">Комбо соусов</p>
+
+                      <p class="component__weight">150г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__container">
+        <div class="footer__logo"
+             id="logoFoot-container">
+        </div>
+
+        <div class="footer__design-info">
+          <p class="footer__design">
+            © YouMeal, 2022
+          </p>
+
+          <p class="footer__design">
+            Design: Anastasia Ilina
+          </p>
+        </div>
+      </div>
+
+      <div class="footer__container footer__container_contact">
+        <div class="footer__column">
+          <p class="footer__text">
+            Номер для заказа
+          </p>
+
+          <p class="footer__contact">
+            <span id="call-container">
+            </span>
+
+            <span>
+              +38(050)833-38-11
+            </span>
+          </p>
+        </div>
+
+
+        <div class="footer__column">
+          <p class="footer__text">
+            Мы в соцсетях
+          </p>
+
+
+          <div class="footer__icons">
+            <a href="#"
+               id="vk-container">
+            </a>
+
+            <a href="#"
+               id="tg-container">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__container footer__container_tablet">
+        <p class="footer__design">
+          © YouMeal, 2022
+        </p>
+
+        <p class="footer__design">
+          Design: Anastasia Ilina
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modals">
+    <div class="modal modal-hidden "
+         id="">
+      <div class="modal__wrapper">
+        <div class="modal__inner">
+          <h2 class="modal__title">
+
+          </h2>
+
+          <button class="modal__close"
+                  id="close-modal-container">
+          </button>
+        </div>
+
+
+        <div class="modal__inner modal__inner_main">
+          <div class="modal__column modal__column_main">
+            <img class="modal__image" src="" alt="">
+          </div>
+
+          <div class="modal__column modal__column_main">
+            <p class="modal__text">
+
+            </p>
+
+            <p class="modal__composition">
+              Состав:
+            </p>
+
+            <ul class="modal__ingredients">
+            </ul>
+
+            <p class="modal__weight-calorie">
+              <span class="modal__weight">
+              </span>
+
+              <span class="modal__calorie">
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <div class="modal__inner">
+          <div class="modal__column">
+            <div class="modal__add">
+              <button class="modal__btn"
+                      data-add="modal">
+                Добавить
+              </button>
+
+              <div class="modal__order">
+                <button class="modal__counter modal__count_minus"
+                        data-action="minus">
+                  -
+                </button>
+
+                <p class="modal__quantity"
+                   data-action="counter">
+                  1
+                </p>
+
+                <button class="modal__counter modal__count_plus"
+                        data-action="plus">
+                  +
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal__column">
+            <p class="modal__price">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="delivery modal-hidden"
+         id="order">
+      <div class="delivery__wrapper">
+        <div class="delivery__container">
+          <div class="delivery__column">
+            <div class="delivery__donut"
+                 id="donut-container">
+            </div>
+          </div>
+
+          <div class="delivery__column">
+            <h2 class="delivery__title">
+              Доставка
+            </h2>
+
+            <div class="delivery__close"
+                 id="close-delivery-container">
+            </div>
+
+            <form class="delivery__form"
+                  action="/submit-order"
+                  method="post"
+                  id="contact-form">
+              <label for="name"></label>
+              <input class="delivery__text delivery__name"
+                     type="text"
+                     id="name"
+                     name="name"
+                     placeholder="Ваше имя"
+                     required>
+
+              <label for="tel"></label>
+              <input class="delivery__text delivery__number"
+                     type="tel"
+                     id="tel"
+                     name="tel"
+                     placeholder="Телефон"
+                     required>
+
+              <div class="delivery__type-delivery">
+                <div class="delivery__radio delivery__radio_pickup">
+                  <input class=""
+                         type="radio"
+                         id="pickup"
+                         name="type-delivery"
+                         value="pickup">
+                  <label for="pickup">
+                    Самовывоз
+                  </label>
+                </div>
+
+                <div class="delivery__radio delivery__radio_delivery">
+                  <input class=""
+                         type="radio"
+                         id="delivery"
+                         name="type-delivery"
+                         value="delivery">
+                  <label for="delivery">
+                    Доставка
+                  </label>
+                </div>
+              </div>
+
+              <div class="delivery__inner">
+                <label for="address"></label>
+                <input class="delivery__text delivery__address"
+                       type="text"
+                       id="address"
+                       name="address"
+                       placeholder="Улица, дом, квартира">
+                <div class="delivery__details">
+                  <label for="floor">
+                    <input class="delivery__text delivery__data"
+                           type="text"
+                           id="floor"
+                           name="floor"
+                           placeholder="Этаж">
+                  </label>
+
+                  <label for="intercom">
+                    <input class="delivery__text delivery__data"
+                           type="text"
+                           id="intercom"
+                           name="intercom"
+                           placeholder="Домофон">
+                  </label>
+                </div>
+              </div>
+
+              <button class="delivery__btn">
+                Оформить
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-accepted modal-hidden">
+      <div class="modal-accepted__wrapper">
+        <p class="modal-accepted__text">
+          Ваш заказ принят!
+        </p>
+
+        <p class="modal-accepted__description">
+          Наш менеджер свяжется с Вами в ближайшее время!
+        </p>
+
+        <div class="modal-accepted__close"
+             id="close-modal-accepted"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+ </body>
+</html>
