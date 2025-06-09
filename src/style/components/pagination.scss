@@ -1,0 +1,53 @@
+@use "../utils/mixins" as *;
+
+.pagination{
+
+  &__wrapper{
+    @include respond(tablet){
+      padding-left: 6.25vw;
+    }
+  }
+    &__item{
+    width: auto!important;
+
+    button{
+      box-sizing: border-box;
+      max-width: 100%;
+      border-radius: 50px;
+      border:none;
+      color: var(--dark-color);
+      background-color: var(--card-color);
+      font-size: var(--main-fs);
+      font-weight: var(--regular-fw);
+      padding: 8px 14px;
+
+      @include respond(tablet) {
+        font-size: var(--mobile-medium-fs);
+        padding: 3px 8px;
+      }
+
+      @include respond(mobile) {
+        font-size: var(--mobile-medium-fs);
+        padding:3px 8px;
+      }
+    }
+  }
+
+  &__item.active{
+    button{
+      background-color: var(--light-color);
+    }
+  }
+
+  &__btn{
+    img{
+      max-width: 24px;
+      margin-right: 4px;
+    }
+  }
+}
+
+
+
+
+

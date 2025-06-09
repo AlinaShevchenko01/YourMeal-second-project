@@ -1,0 +1,130 @@
+@use "../utils/mixins" as *;
+
+.header{
+  background-image: url('../../assets/svg/components/Ellipse 5.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 2880px;
+
+  @include respond(tablet) {
+    background-size: 2540px;
+  }
+
+  @include respond(mobile) {
+    background-size: 611px;
+  }
+
+  &__logo{
+    max-width: 152px;
+    max-height: 34px;
+    fill: var(--card-color);
+    margin:0 auto;
+    padding: 22px 0 24px;
+
+    @include respond(mobile) {
+      max-width: 150px;
+      max-height: 29px;
+      padding: 23px 0 25px 6px;
+    }
+  }
+
+    &__inner{
+    box-sizing: border-box;
+    max-width: 816px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 16px 63px;
+
+    @include respond(desktop) {
+      max-width: 796px;
+      gap: 3px;
+      padding: 0 16px 60px;
+    }
+
+    @include respond(tablet){
+      max-width: 594px;
+      gap: 16px;
+      padding: 0 10px 40px;
+    }
+
+    @include respond(mobile) {
+      max-width: 320px;
+      flex-direction: column-reverse;
+      padding: 0 10px 33px;
+    }
+  }
+
+  &__image{
+    padding: 24px 35px 8px;
+
+    @include respond(tablet){
+      padding: 10px 18px 11px 31px;
+    }
+
+    @include respond(mobile) {
+      padding: 4px 0 0 60px;
+    }
+  }
+
+  &__image svg{
+    @include respond(tablet) {
+      max-width: 178px;
+      max-height: 205px;
+    }
+
+    @include respond(mobile) {
+      max-width: 177px;
+      max-height: 204px;
+    }
+  }
+
+  &__title{
+    color: var(--card-color);
+    font-weight: var(--extrabold-fw);
+    font-size: var(--title-fs);
+    line-height: 120%;
+    padding-top: 44px;
+    margin-bottom: 54px;
+
+    @include respond(tablet) {
+      font-size: var(--tablet-title-fs);
+      padding-top: 24px;
+      margin-bottom: 26px;
+    }
+
+    @include respond(mobile) {
+      font-size: var(--mobile-title-fs);
+      text-align: center;
+      padding-top: 0;
+      margin-bottom: 18px;
+    }
+  }
+
+  &__title_accent{
+    color: var(--tab-color);
+  }
+
+  &__text{
+    color: var(--card-color);
+    font-weight: var(--regular-fw);
+    font-size: var(--main-fs);
+
+    @include respond(tablet) {
+      font-size: var(--mobile-medium-fs);
+    }
+
+    @include respond(mobile) {
+      font-size: var(--mobile-medium-fs);
+      text-align: center;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+
+
+
+
+

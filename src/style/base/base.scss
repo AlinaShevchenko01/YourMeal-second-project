@@ -1,0 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: Nunito, sans-serif;
+  font-weight: var(--regular-fw);
+  font-size: var(--main-fs);
+  background-color: var(--bg-color);
+  color: var(--dark-color);
+}

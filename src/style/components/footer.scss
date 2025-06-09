@@ -1,0 +1,174 @@
+@use "../utils/mixins" as *;
+
+.footer{
+  background-color: var(--card-color);
+
+  &__wrapper{
+    box-sizing: border-box;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 46px 14.65vw 40px 5.2vw;
+
+    @include respond(desktop) {
+      max-width: 1024px;
+      padding: 46px 32px 39px;
+    }
+
+    @include respond(tablet){
+      max-width: 768px;
+      flex-direction: column;
+      gap: 0;
+      padding: 34px 32.68vw 30px 8.3vw;
+    }
+
+    @include respond(mobile){
+      max-width: 480px;
+      flex-direction: column;
+       gap: 0;
+      padding: 24px 114px 26px 3.13vw;
+    }
+  }
+
+  &__logo{
+
+    fill: var(--accent-color);
+    margin-bottom: 53px;
+
+    @include respond(tablet){
+      margin-bottom: 20px;
+    }
+
+    @include respond(mobile){
+      margin-bottom: 8px;
+    }
+
+    svg{
+        width: 305px;
+        height: 69px;
+
+      @include respond(tablet) {
+        width: 200px;
+        height: 50px;
+      }
+
+      @include respond(mobile) {
+        width: 200px;
+        height: 50px;
+      }
+    }
+  }
+
+  &__design-info{
+    @include respond(tablet) {
+      display: none;
+    }
+
+    @include respond(mobile){
+      display: none;
+    }
+  }
+
+  &__design{
+    font-size: var(--mobile-medium-fs);
+
+    &:first-of-type{
+      margin-bottom: 6px;
+    }
+  }
+
+  &__container_contact{
+    max-width: 494px;
+    display: flex;
+    justify-content: space-between;
+    gap: 126px;
+    padding-top: 6px;
+
+    @include respond(desktop) {
+      gap: 50px;
+    }
+
+    @include respond(tablet){
+      max-width: none;
+      gap: 32px;
+    }
+
+    @include respond(mobile){
+      flex-direction: column;
+      max-width: none;
+      gap: 24px;
+    }
+  }
+
+  &__text{
+    font-size: var(--large-fs);
+    line-height: 100%;
+
+    @include respond(tablet){
+      font-size: var(--medium-fs);
+    }
+
+    @include respond(mobile){
+      font-size: var(--medium-fs);
+    }
+  }
+
+  &__contact{
+    display: flex;
+    align-items: center;
+    gap:2px;
+    line-height: 130%;
+    margin-top: 24px;
+
+    @include respond(tablet){
+      font-size: var(--mobile-medium-fs);
+      margin-top: 8px;
+    }
+
+    @include respond(mobile){
+      font-size: var(--mobile-medium-fs);
+      margin-top: 8px;
+    }
+
+    svg{
+      width: 24px;
+      height: 24px;
+      display: block;
+    }
+  }
+
+  &__icons{
+    display: flex;
+    gap: 16px;
+    fill: var(--accent-color);
+    margin-top: 22px;
+
+    @include respond(tablet){
+      margin-top: 8px;
+    }
+
+    @include respond(mobile){
+      margin-top: 8px;
+    }
+
+
+    svg :hover{
+      fill: var(--light-color);
+    }
+  }
+
+  &__container_tablet {
+    display: none;
+
+    @include respond(tablet){
+      display: block;
+      margin-top: 40px;
+    }
+
+    @include respond(mobile){
+      display: block;
+      margin-top: 34px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.hidden {
+  visibility: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.shown {
+  visibility: visible;
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
+
+.modal-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.5s;
+}
+
+.modal-open{
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.active {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+.shadow{
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+}

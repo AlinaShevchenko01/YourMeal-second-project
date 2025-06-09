@@ -1,0 +1,19 @@
+@use "utils/mixins" as *;
+@use "utils/variables" as *;
+@use "utils/utils";
+
+@use "base/reset";
+@use "base/base";
+
+@use "components/buttons";
+@use "components/cart";
+@use "components/component-menu";
+@use "components/footer";
+@use "components/header";
+@use "components/menu";
+@use "components/modal-accepted";
+@use "components/modal-card";
+@use "components/modal-delivery";
+@use "components/pagination";
+
+

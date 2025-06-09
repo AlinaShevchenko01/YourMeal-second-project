@@ -1,0 +1,334 @@
+@use "../utils/mixins" as *;
+
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.08);
+  z-index: 1;
+
+  &__wrapper{
+    box-sizing: border-box;
+    max-width: 684px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--card-color);
+    border-radius: 24px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    padding: 24px 24px 36px;
+
+    @include respond(tablet){
+      max-width: 524px;
+      padding: 16px 16px 24px;
+    }
+
+    @include respond(mobile){
+      max-width: 320px;
+      border-radius: 0;
+      padding: 32px 10px;
+    }
+  }
+
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+
+    @include respond(tablet){
+      gap: 8px;
+    }
+
+    @include respond(mobile){
+      flex-direction: column;
+    }
+
+    &:first-of-type{
+      align-items: flex-start;
+
+      @include respond(mobile){
+        position: relative;
+      }
+    }
+
+    &:last-of-type{
+      align-items: center;
+      margin-top: 38px;
+
+      @include respond(tablet){
+        margin-top: 22px;
+      }
+
+      @include respond(mobile){
+        align-items: flex-end;
+        gap: 16px;
+        margin-top: 98px;
+      }
+    }
+  }
+
+  &__close{
+    border: none;
+    background-color: transparent;
+    padding-inline: 0;
+    padding-block: 0;
+
+    @include respond(mobile){
+      position: absolute;
+      top:-20px;
+      right:-2px;
+    }
+  }
+
+  &__close svg{
+    width: 24px;
+    height: 24px;
+  }
+
+  &__title{
+    font-size: var(--xlarge-fs);
+    font-weight: var(--semibold-fw);
+    line-height: 120%;
+    margin-bottom: 26px;
+
+    @include respond(tablet){
+      font-size: var(--tablet-large-fs);
+      margin-bottom: 18px;
+    }
+
+    @include respond(mobile){
+      font-size: var(--tablet-large-fs);
+      margin-bottom: 12px;
+    }
+  }
+
+  &__inner_main{
+    max-width: 90vw;
+
+    @include respond(mobile){
+      gap:12px
+    }
+  }
+
+  &__column_main:first-of-type{
+    @include respond(mobile){
+      flex: 1 1 auto;
+      max-width: 100%;
+    }
+  }
+
+   &__column_main:last-of-type{
+    width: 344px;
+
+    @include respond(tablet){
+      flex: 0 0 calc(53.3% - 4px);
+      max-width: calc(53.3% - 4px);
+      max-height: 181px;
+    }
+
+     @include respond(mobile){
+       width: auto;
+     }
+  }
+
+  &__column img{
+    max-width: 276px;
+    border-radius: 16px;
+
+    @include respond(tablet){
+      max-width: 226px;
+      min-width: 180px;
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @include respond(mobile){
+      max-width: 300px;
+      width: 110%;
+      height: auto;
+    }
+  }
+
+  &__text{
+    line-height: 130%;
+    margin-bottom: 10px;
+
+    @include respond(tablet){
+      font-size: var(--mobile-medium-fs);
+    }
+
+    @include respond(mobile){
+      font-size: var(--mobile-medium-fs);
+    }
+  }
+
+  &__composition{
+    font-size: var(--mobile-medium-fs);
+    font-weight: var(--semibold-fw);
+    line-height: 130%;
+    margin-bottom: 4px;
+
+    @include respond(tablet){
+      font-size: var(--mobile-small-fs);
+    }
+
+    @include respond(mobile){
+      font-size: var(--mobile-small-fs);
+    }
+  }
+
+  &__ingredients{
+    font-size: var(--mobile-medium-fs);
+    line-height: 130%;
+    margin-bottom: 4px;
+
+    @include respond(tablet){
+      font-size: var(--mobile-small-fs);
+    }
+
+    @include respond(mobile){
+      font-size: var(--mobile-small-fs);
+    }
+
+    li{
+      margin-bottom: 2px;
+    }
+  }
+
+  &__weight-calorie{
+    font-size: var(--mobile-medium-fs);
+    line-height: 130%;
+    color: var(--weight-color);
+
+    @include respond(tablet){
+      font-size: var(--mobile-small-fs);
+    }
+
+    @include respond(mobile){
+      font-size: var(--mobile-small-fs);
+    }
+  }
+
+  &__btn{
+    border-radius: 12px;
+    border: none;
+    background-color: var(--unactive-color);
+    line-height: 100%;
+    padding: 0 102px;
+
+    @include respond(tablet){
+      border-radius: 8px;
+      font-size: var(--mobile-medium-fs);
+      padding: 0 82px;
+    }
+
+    @include respond(mobile){
+      border-radius: 8px;
+      font-size: var(--mobile-medium-fs);
+      padding: 0 82px;
+    }
+
+    &:hover{
+      background-color: var(--light-color);
+      color: var(--card-color);
+    }
+
+    &:active{
+      background-color: var(--tab-color);
+      color: var(--card-color);
+    }
+  }
+
+  &__add{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+
+    @include respond(tablet){
+      gap: 8px;
+    }
+
+    @include respond(mobile){
+      gap: 8px;
+    }
+  }
+
+  &__order{
+    display: flex;
+    align-items: center;
+    background-color: var(--unactive-color);
+    border-radius: 12px;
+
+    @include respond(tablet){
+      font-size: var(--mobile-medium-fs);
+      border-radius: 8px;
+    }
+
+    @include respond(mobile){
+      font-size: var(--mobile-medium-fs);
+      border-radius: 8px;
+    }
+  }
+
+  &__counter{
+    border: none;
+    padding: 9px 18px 9px 14px;
+    border-radius: 12px;
+
+    @include respond(tablet){
+      font-size: var(--mobile-medium-fs);
+      padding: 7px 19px 7px 9px;
+      border-radius: 8px;
+    }
+
+    @include respond(mobile){
+      font-size: var(--mobile-medium-fs);
+      padding: 7px 19px 7px 9px;
+      border-radius: 8px;
+    }
+
+    &:last-of-type{
+      padding: 9px 11px 9px 15px;
+
+      @include respond(tablet){
+        padding: 7px 9px 7px 17px;
+      }
+
+      @include respond(mobile){
+      padding: 7px 9px 7px 17px;
+      }
+    }
+
+
+    &:hover{
+      background-color: var(--light-color);
+      color: var(--card-color)
+    }
+
+    &:active{
+      background-color: var(--tab-color);
+      color: var(--card-color);
+    }
+  }
+
+  &__price{
+    font-size:var(--large-fs);
+    font-weight: var(--semibold-fw);
+    line-height: 130%;
+
+    @include respond(tablet){
+      font-size:var(--main-fs);
+    }
+
+    @include respond(mobile){
+      font-size:var(--main-fs);
+    }
+  }
+}
+
+
+

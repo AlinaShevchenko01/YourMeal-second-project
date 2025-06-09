@@ -1,0 +1,181 @@
+@use "../utils/mixins" as *;
+.component{
+  padding-top: 50px;
+
+  @include respond(tablet){
+    padding-top: 0;
+  }
+
+  @include respond(mobile){
+    padding-top: 0;
+  }
+
+  &__title{
+    font-size: var(--xlarge-fs);
+    font-weight: var(--semibold-fw);
+    line-height: 120%;
+    margin-bottom: 24px;
+
+    @include respond(desktop){
+      margin-bottom: 26px;
+    }
+
+    @include respond(tablet){
+      font-size: var(--tablet-large-fs);
+      margin-bottom: 16px;
+    }
+
+    @include respond(mobile){
+      font-size: var(--tablet-large-fs);
+      margin-bottom: 16px;
+    }
+  }
+
+  &__inner{
+    box-sizing: border-box;
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @include respond(desktop){
+      max-width: 630px
+    }
+
+    @include respond(tablet){
+      gap: 20px;
+      max-width: 640px;
+    }
+
+    @include respond(mobile){
+      gap: 10px;
+      max-width: 300px;
+    }
+  }
+
+  &__card{
+    box-sizing: border-box;
+    padding:12px;
+    border-radius: 18px;
+    background-color: var(--card-color);
+    cursor: pointer;
+    flex: 0 1 calc((100%/3) - 20px);
+    max-width: calc(100%/3 - 20px);
+
+    &:hover{
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+    }
+
+    @include respond(desktop){
+      flex: 0 1 calc((100%/2) - 15px);
+      max-width: calc(100%/2 - 15px);
+    }
+
+    @include respond(tablet){
+      border-radius: 12px;
+      flex: 1 1 calc((100%/4) - 15px);
+      max-width: calc(100%/4 - 15px);
+      padding: 4px;
+    }
+
+    @include respond(mobile){
+      border-radius: 12px;
+      flex: 1 1 calc((100%/2) - 5px);
+      max-width: calc(100%/2 - 5px);
+      padding: 4px;
+    }
+  }
+
+  &__card img{
+    max-width: 100%;
+    border-radius: 12px;
+
+    @include respond(tablet){
+      border-radius: 8px;
+    }
+
+    @include respond(mobile){
+      border-radius: 8px;
+    }
+  }
+
+  &__price{
+    font-size: var(--large-fs);
+    font-weight: var(--semibold-fw);
+    line-height: 100%;
+    margin: 16px 0 8px;
+
+    @include respond(tablet){
+      font-size: var(--main-fs);
+      margin: 10px 0 4px;
+    }
+
+    @include respond(mobile){
+      font-size: var(--main-fs);
+      margin: 10px 0 4px;
+    }
+  }
+
+  &__text{
+    line-height: 130%;
+    margin-bottom: 29px;
+
+    @include respond(tablet){
+      font-size: var(--mobile-medium-fs);
+      margin-bottom: 16px;
+    }
+
+    @include respond(mobile){
+      font-size: var(--mobile-medium-fs);
+      margin-bottom: 16px;
+    }
+  }
+
+  &__weight{
+    font-weight: var(--semibold-fw);
+    line-height: 130%;
+    color: var(--weight-color);
+    margin-bottom: 8px;
+
+    @include respond(tablet){
+      font-size: var(--mobile-medium-fs);
+      margin-bottom: 7px;
+    }
+
+    @include respond(mobile){
+      font-size: var(--mobile-medium-fs);
+      margin-bottom: 7px;
+    }
+  }
+
+  &__button{
+    width: 100%;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--unactive-color);
+    line-height: 100%;
+    padding: 12px 0;
+
+    @include respond(tablet){
+      border-radius: 8px;
+      font-size: var(--mobile-medium-fs);
+      padding: 9px 0;
+    }
+
+    @include respond(mobile){
+      border-radius: 8px;
+      font-size: var(--mobile-medium-fs);
+      padding: 9px 0;
+    }
+
+    &:hover{
+      background-color: var(--light-color);
+      color: var(--card-color);
+    }
+
+    &:active{
+      background-color: var(--tab-color);
+      color: var(--card-color)
+    }
+  }
+}

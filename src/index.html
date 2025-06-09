@@ -1,0 +1,894 @@
+<!doctype html>
+<html lang="RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>YourMeal</title>
+    <link rel="icon" type="image/svg" href="assets/svg/components/icon-site.svg" sizes="16x16">
+
+    <link
+      rel="stylesheet"
+      href="./style/index.scss" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  </head>
+
+  <body>
+  <header class="header">
+    <div class="header__logo"
+         id="logoHead-container">
+    </div>
+
+    <div class="header__wrapper">
+      <div class="header__inner">
+        <div class="header__column">
+          <div class="header__image"
+               id="burger-container">
+          </div>
+        </div>
+
+        <div class="header__column">
+          <h1 class="header__title">
+          <span>
+            Только самые
+          </span>
+
+            <span class="header__title_accent">
+            сочные бургеры!
+          </span>
+          </h1>
+
+          <p class="header__text">
+            Бесплатная доставка от 599₴
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="menu">
+      <div class="menu__wrapper">
+
+        <div class="menu__pagination pagination swiper">
+          <div class="swiper-wrapper pagination__wrapper">
+            <div class="swiper-slide pagination__item">
+              <button class="pagination__btn">
+                <img src="assets/img/main/icons/burger.png" alt="burgerIcon">
+
+                <span>
+                Бургеры
+                </span>
+              </button>
+            </div>
+
+            <div class="swiper-slide pagination__item">
+              <button class="pagination__btn">
+                <img src="assets/img/main/icons/snacks.png" alt="snacksIcon">
+
+                <span>
+              Закуски
+                </span>
+              </button>
+            </div>
+
+            <div class="swiper-slide pagination__item">
+              <button class="pagination__btn">
+                <img src="assets/img/main/icons/hot-dog.png" alt="hot-dogIcon">
+
+                <span>
+              Хот-доги
+                </span>
+              </button>
+            </div>
+
+            <div class="swiper-slide pagination__item">
+              <button class="pagination__btn">
+                <img src="assets/img/main/icons/combo.png" alt="comboIcon">
+
+                <span>
+              Комбо
+                </span>
+              </button>
+            </div>
+
+            <div class="swiper-slide pagination__item">
+              <button class="pagination__btn">
+                <img src="assets/img/main/icons/doner.png" alt="donerIcon">
+
+                <span>
+              Шаурма
+                </span>
+              </button>
+            </div>
+
+            <div class="swiper-slide pagination__item">
+              <button class="pagination__btn">
+                <img src="assets/img/main/icons/pizza.png" alt="pizzaIcon">
+
+                <span>
+              Пицца
+                </span>
+              </button>
+            </div>
+
+            <div class="swiper-slide pagination__item">
+              <button class="pagination__btn">
+                <img src="assets/img/main/icons/wok.png" alt="wokIcon">
+
+                <span>
+              Вок
+                </span>
+              </button>
+            </div>
+
+            <div class="swiper-slide pagination__item">
+              <button class="pagination__btn">
+                <img src="assets/img/main/icons/dessert.png" alt="dessertIcon">
+
+                <span>
+              Десерты
+                </span>
+              </button>
+            </div>
+
+            <div class="swiper-slide pagination__item">
+              <button class="pagination__btn">
+                <img src="assets/img/main/icons/sauce.png" alt="sauceIcon">
+
+                <span>
+              Соусы
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu__container">
+          <aside class="menu__cart cart">
+            <div class="cart__container">
+              <div class="cart__inner">
+                <div class="cart__head">
+                  <h3 class="cart__title">
+                    Корзина
+                  </h3>
+
+                  <button class="cart__amount">
+                    0
+                  </button>
+                </div>
+              </div>
+
+              <p class="cart__empty">
+                Тут пока пусто :(
+              </p>
+
+              <div class="cart__tablet">
+                <div class="cart__wrapper"></div>
+
+                <div class="cart__order hidden">
+                  <div class="cart__sum">
+                    <p class="cart__text">
+                      Итого
+                    </p>
+
+                    <p class="cart__text cart__total-price"></p>
+                  </div>
+
+                  <div class="cart__btn-order">
+                    <button data-order="order">
+                      Оформить заказ
+                    </button>
+                  </div>
+                </div>
+
+                <div class="cart__inner-bot">
+                  <div class="cart__free-delivery hidden">
+                    <img src="assets/img/main/icons/delivery.png" alt="free-delivery">
+
+                    <span>
+                    Бесплатная доставка
+                    </span>
+                  </div>
+
+                  <p class="cart__close-mobile hidden">
+                    Свернуть
+                  </p>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+          <div class="swiper menu__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide menu__component component">
+                <div class="component__wrapper">
+                  <h2 class="component__title">
+                    Бургеры
+                  </h2>
+
+                  <div class=" component__inner">
+                    <div class="component__card"
+                         data-target="modal1">
+                      <img src="assets/img/main/components/burger/burger1.png" alt="burger1">
+
+                      <p class="component__price">689₴</p>
+
+                      <p class="component__text">Мясная бомба</p>
+
+                      <p class="component__weight">520г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+
+                    <div class="component__card"
+                         data-target="modal2">
+                      <img src="assets/img/main/components/burger/burger2.png" alt="burger2">
+
+                      <p class="component__price">550₴</p>
+
+                      <p class="component__text">Супер сырный</p>
+
+                      <p class="component__weight">512г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+
+                    <div class="component__card"
+                         data-target="modal3">
+                      <img src="assets/img/main/components/burger/burger3.png" alt="burger3">
+
+                      <p class="component__price">639₴</p>
+
+                      <p class="component__text">Сытный</p>
+
+                      <p class="component__weight">580г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+
+                    <div class="component__card"
+                         data-target="modal4">
+                      <img src="assets/img/main/components/burger/burger4.png" alt="burger4">
+
+                      <p class="component__price">480U₴</p>
+
+                      <p class="component__text">Тяжелый удар</p>
+
+                      <p class="component__weight">470г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+
+                    <div class="component__card"
+                         data-target="modal5">
+                      <img src="assets/img/main/components/burger/burger5.png" alt="burger5">
+
+                      <p class="component__price">450₴</p>
+
+                      <p class="component__text">Вечная классика</p>
+
+                      <p class="component__weight">450г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+
+                    <div class="component__card"
+                         data-target="modal6">
+                      <img src="assets/img/main/components/burger/burger6.png" alt="burger6">
+
+                      <p class="component__price">560₴</p>
+
+                      <p class="component__text">Итальянский</p>
+
+                      <p class="component__weight">510г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="swiper-slide menu__component component">
+                <div class="component__wrapper">
+                  <h2 class="component__title">
+                    Закуски
+                  </h2>
+
+                  <div class=" component__inner">
+                    <div class="component__card"
+                         data-target="modal7">
+                      <img src="assets/img/main/components/snacks/snack1.png" alt="snack1">
+
+                      <p class="component__price">250₴</p>
+
+                      <p class="component__text">Начос</p>
+
+                      <p class="component__weight">220г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+
+                    <div class="component__card"
+                         data-target="modal8">
+                      <img src="assets/img/main/components/snacks/snack2.png" alt="snack2">
+
+                      <p class="component__price">245₴</p>
+
+                      <p class="component__text">Картошка фри</p>
+
+                      <p class="component__weight">180г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+
+                    <div class="component__card "
+                         data-target="modal9">
+                      <img src="assets/img/main/components/snacks/snack3.png" alt="snack3">
+
+                      <p class="component__price">230₴</p>
+
+                      <p class="component__text">Луковые кольца</p>
+
+                      <p class="component__weight">230г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide menu__component component">
+                <div class="component__wrapper">
+                  <h2 class="component__title">
+                    Хот-доги
+                  </h2>
+
+                  <div class=" component__inner">
+                    <div class="component__card"
+                         data-target="modal10">
+                      <img src="assets/img/main/components/hot-dog/hot-dog1.png" alt="hot-dog1">
+
+                      <p class="component__price">290₴</p>
+
+                      <p class="component__text">Домашний хот-дог</p>
+
+                      <p class="component__weight">250г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+
+                    <div class="component__card"
+                         data-target="modal11">
+                      <img src="assets/img/main/components/hot-dog/hot-dog2.png" alt="hot-dog2">
+
+                      <p class="component__price">239₴</p>
+
+                      <p class="component__text">Жгучий хот-дог</p>
+
+                      <p class="component__weight">245г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+
+                    <div class="component__card"
+                         data-target="modal12">
+                      <img src="assets/img/main/components/hot-dog/hot-dog3.png" alt="hot-dog3">
+
+                      <p class="component__price">220₴</p>
+
+                      <p class="component__text">Классический хот-дог</p>
+
+                      <p class="component__weight">215г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide menu__component component">
+                <div class="component__wrapper">
+                  <h2 class="component__title">
+                    Комбо
+                  </h2>
+
+                  <div class="component__inner">
+                    <div class="component__card"
+                         data-target="modal13" >
+                      <img src="assets/img/main/components/combo/combo1.png" alt="combo1">
+
+                      <p class="component__price">290₴</p>
+
+                      <p class="component__text">Домашний обед</p>
+
+                      <p class="component__weight">500г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+
+                    <div class="component__card"
+                         data-target="modal14">
+                      <img src="assets/img/main/components/combo/combo2.png" alt="combo2">
+
+                      <p class="component__price">300₴</p>
+
+                      <p class="component__text">Комбо</p>
+
+                      <p class="component__weight">500г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide menu__component component">
+                <div class="component__wrapper">
+                  <h2 class="component__title">
+                    Шаурма
+                  </h2>
+
+                  <div class="component__inner">
+                    <div class="component__card"
+                         data-target="modal15">
+                      <img src="assets/img/main/components/doner/shaurma1.png" alt="doner1">
+
+                      <p class="component__price">250₴</p>
+
+                      <p class="component__text">Шаурма с луком</p>
+
+                      <p class="component__weight">400г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+
+                    <div class="component__card"
+                         data-target="modal16">
+                      <img src="assets/img/main/components/doner/shaurma2.png" alt="doner2">
+
+                      <p class="component__price">270₴</p>
+
+                      <p class="component__text">Шаурма изысканная</p>
+
+                      <p class="component__weight">450г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide menu__component component">
+                <div class="component__wrapper">
+                  <h2 class="component__title">
+                    Пицца
+                  </h2>
+
+                  <div class="component__inner">
+                    <div class="component__card"
+                         data-target="modal17">
+                      <img src="assets/img/main/components/pizza/pizza1.png" alt="pizza1">
+
+                      <p class="component__price">270₴</p>
+
+                      <p class="component__text">Пицца итальянская</p>
+
+                      <p class="component__weight">550г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide menu__component component">
+                <div class="component__wrapper">
+                  <h2 class="component__title">
+                    Вок
+                  </h2>
+
+                  <div class="component__inner">
+                    <div class="component__card"
+                         data-target="modal18">
+                      <img src="assets/img/main/components/wok/wok1.png" alt="wok">
+
+                      <p class="component__price">320₴</p>
+
+                      <p class="component__text">Вок корейский</p>
+
+                      <p class="component__weight">560г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide menu__component component">
+                <div class="component__wrapper">
+                  <h2 class="component__title">
+                    Десерты
+                  </h2>
+
+                  <div class="component__inner">
+                    <div class="component__card" data-target="modal19">
+                      <img src="assets/img/main/components/desserts/cake.png" alt="dessert">
+
+                      <p class="component__price">220₴</p>
+
+                      <p class="component__text">Торт шоколадный</p>
+
+                      <p class="component__weight">180г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide menu__component component">
+                <div class="component__wrapper">
+                  <h2 class="component__title">
+                    Соусы
+                  </h2>
+
+                  <div class="component__inner">
+                    <div class="component__card"
+                         data-target="modal20">
+                      <img src="assets/img/main/components/sauces/threeSauces.png" alt="sauce">
+
+                      <p class="component__price">160₴</p>
+
+                      <p class="component__text">Комбо соусов</p>
+
+                      <p class="component__weight">150г</p>
+
+                      <button class="component__button"
+                              data-add="card">
+                        Добавить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__container">
+        <div class="footer__logo"
+             id="logoFoot-container">
+        </div>
+
+        <div class="footer__design-info">
+          <p class="footer__design">
+            © YouMeal, 2022
+          </p>
+
+          <p class="footer__design">
+            Design: Anastasia Ilina
+          </p>
+        </div>
+      </div>
+
+      <div class="footer__container footer__container_contact">
+        <div class="footer__column">
+          <p class="footer__text">
+            Номер для заказа
+          </p>
+
+          <p class="footer__contact">
+            <span id="call-container">
+            </span>
+
+            <span>
+              +38(050)833-38-11
+            </span>
+          </p>
+        </div>
+
+
+        <div class="footer__column">
+          <p class="footer__text">
+            Мы в соцсетях
+          </p>
+
+
+          <div class="footer__icons">
+            <a href="#"
+               id="vk-container">
+            </a>
+
+            <a href="#"
+               id="tg-container">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__container footer__container_tablet">
+        <p class="footer__design">
+          © YouMeal, 2022
+        </p>
+
+        <p class="footer__design">
+          Design: Anastasia Ilina
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modals">
+    <div class="modal modal-hidden "
+         id="">
+      <div class="modal__wrapper">
+        <div class="modal__inner">
+          <h2 class="modal__title">
+
+          </h2>
+
+          <button class="modal__close"
+                  id="close-modal-container">
+          </button>
+        </div>
+
+
+        <div class="modal__inner modal__inner_main">
+          <div class="modal__column modal__column_main">
+            <img class="modal__image" src="" alt="">
+          </div>
+
+          <div class="modal__column modal__column_main">
+            <p class="modal__text">
+
+            </p>
+
+            <p class="modal__composition">
+              Состав:
+            </p>
+
+            <ul class="modal__ingredients">
+            </ul>
+
+            <p class="modal__weight-calorie">
+              <span class="modal__weight">
+              </span>
+
+              <span class="modal__calorie">
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <div class="modal__inner">
+          <div class="modal__column">
+            <div class="modal__add">
+              <button class="modal__btn"
+                      data-add="modal">
+                Добавить
+              </button>
+
+              <div class="modal__order">
+                <button class="modal__counter modal__count_minus"
+                        data-action="minus">
+                  -
+                </button>
+
+                <p class="modal__quantity"
+                   data-action="counter">
+                  1
+                </p>
+
+                <button class="modal__counter modal__count_plus"
+                        data-action="plus">
+                  +
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal__column">
+            <p class="modal__price">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="delivery modal-hidden"
+         id="order">
+      <div class="delivery__wrapper">
+        <div class="delivery__container">
+          <div class="delivery__column">
+            <div class="delivery__donut"
+                 id="donut-container">
+            </div>
+          </div>
+
+          <div class="delivery__column">
+            <h2 class="delivery__title">
+              Доставка
+            </h2>
+
+            <div class="delivery__close"
+                 id="close-delivery-container">
+            </div>
+
+            <form class="delivery__form"
+                  action="/submit-order"
+                  method="post"
+                  id="contact-form">
+              <label for="name"></label>
+              <input class="delivery__text delivery__name"
+                     type="text"
+                     id="name"
+                     name="name"
+                     placeholder="Ваше имя"
+                     required>
+
+              <label for="tel"></label>
+              <input class="delivery__text delivery__number"
+                     type="tel"
+                     id="tel"
+                     name="tel"
+                     placeholder="Телефон"
+                     required>
+
+              <div class="delivery__type-delivery">
+                <div class="delivery__radio delivery__radio_pickup">
+                  <input class=""
+                         type="radio"
+                         id="pickup"
+                         name="type-delivery"
+                         value="pickup">
+                  <label for="pickup">
+                    Самовывоз
+                  </label>
+                </div>
+
+                <div class="delivery__radio delivery__radio_delivery">
+                  <input class=""
+                         type="radio"
+                         id="delivery"
+                         name="type-delivery"
+                         value="delivery">
+                  <label for="delivery">
+                    Доставка
+                  </label>
+                </div>
+              </div>
+
+              <div class="delivery__inner">
+                <label for="address"></label>
+                <input class="delivery__text delivery__address"
+                       type="text"
+                       id="address"
+                       name="address"
+                       placeholder="Улица, дом, квартира">
+                <div class="delivery__details">
+                  <label for="floor">
+                    <input class="delivery__text delivery__data"
+                           type="text"
+                           id="floor"
+                           name="floor"
+                           placeholder="Этаж">
+                  </label>
+
+                  <label for="intercom">
+                    <input class="delivery__text delivery__data"
+                           type="text"
+                           id="intercom"
+                           name="intercom"
+                           placeholder="Домофон">
+                  </label>
+                </div>
+              </div>
+
+              <button class="delivery__btn">
+                Оформить
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-accepted modal-hidden">
+      <div class="modal-accepted__wrapper">
+        <p class="modal-accepted__text">
+          Ваш заказ принят!
+        </p>
+
+        <p class="modal-accepted__description">
+          Наш менеджер свяжется с Вами в ближайшее время!
+        </p>
+
+        <div class="modal-accepted__close"
+             id="close-modal-accepted"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script
+      type="module"
+      src="./js/index.js">
+  </script>
+
+
+ </body>
+</html>

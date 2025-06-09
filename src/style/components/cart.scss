@@ -1,0 +1,339 @@
+@use "../utils/mixins" as *;
+
+.cart{
+
+  &__container{
+    box-sizing: border-box;
+    max-width: 18.75rem;
+    position: relative;
+    background-color: var(--card-color);
+    border: none;
+    border-radius: 18px;
+    padding: 24px 16px;
+    margin-top: 122px;
+
+    @include respond(tablet){
+      max-width: 145px;
+      border-radius: 12px;
+      margin-top: 30px;
+      padding: 16px 10px;
+    }
+
+    @include respond(mobile){
+      padding: 16px 10px;
+      border-radius: 12px;
+      margin-top: 30px;
+    }
+  }
+
+  &__container_active{
+    @include respond(tablet){
+     border-bottom-right-radius: 0;
+     border-bottom-left-radius: 0;
+    }
+
+    @include respond(mobile){
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+
+  &__change-size{
+    @include respond(tablet){
+      max-width: 300px;
+      transition: width 0.3s ease;
+    }
+  }
+
+  &__head{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: 129px;
+
+    @include respond(tablet){
+      gap: 27px;
+    }
+  }
+
+  &__title{
+    font-size: var(--large-fs);
+    font-weight: var(--semibold-fw);
+    line-height: 100%;
+    margin-bottom: 16px;
+
+    @include respond(tablet){
+      font-size: var(--main-fs);
+      margin-bottom: 0;
+    }
+
+    @include respond(mobile){
+      font-size: var(--main-fs);
+      margin-bottom: 0;
+    }
+  }
+
+  &__amount{
+    font-size: var(--mobile-medium-fs);
+    background-color: var(--unactive-color);
+    border-radius: 6px;
+    border: none;
+    padding: 2px 17px;
+
+    @include respond(tablet){
+      font-size: var(--mobile-small-fs);
+      padding: 1px 13px;
+    }
+
+    @include respond(mobile){
+      font-size: var(--mobile-small-fs);
+      padding: 1px 13px;
+    }
+  }
+
+  &__empty{
+    line-height: 130%;
+
+    @include respond(tablet){
+      display: none;
+    }
+
+    @include respond(mobile){
+      display: none;
+    }
+  }
+
+  &__tablet{
+    @include respond(tablet){
+      opacity: 0;
+      position: absolute;
+      top: 48px;
+      left: 0;
+      z-index: 1000;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+      background-color: var(--card-color);
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      padding: 0 10px 16px;
+    }
+
+    @include respond(mobile){
+      opacity: 0;
+      position: absolute;
+      top: 48px;
+      left: 0;
+      z-index: 1000;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+      background-color: var(--card-color);
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      padding: 0 10px 16px;
+    }
+  }
+
+  &__item{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto 1.69fr auto;
+    gap: 6px;
+    border-bottom: 1px solid var(--unactive-color);
+    border-top: 1px solid var(--unactive-color);
+    padding: 12px 0 18px;
+
+    @include respond(tablet){
+      padding: 3px 0 14px;
+    }
+
+    @include respond(mobile){
+      padding: 6px 0 14px;
+    }
+  }
+
+  &__column p{
+    font-size: var(--mobile-medium-fs);
+  }
+
+  &__image img{
+    width: 64px;
+    border-radius: 8px;
+  }
+
+  &__name{
+    margin-bottom: 4px;
+
+    @include respond(tablet){
+      margin-bottom: 5px;
+    }
+  }
+
+  &__weight{
+    color: var(--weight-color);
+    margin-bottom: 10px;
+
+    @include respond(tablet){
+      margin-bottom: 7px;
+    }
+  }
+
+  &__counter{
+    display: flex;
+    align-items: center;
+    background-color: var(--unactive-color);
+    border-radius: 12px;
+    margin-top: 4px;
+  }
+
+  &__counter button{
+    border: none;
+
+    &:hover{
+      background-color: var(--light-color);
+      color: var(--card-color)
+    }
+
+    &:active{
+      background-color: var(--tab-color);
+      color: var(--card-color);
+    }
+
+    @include respond(tablet){
+      margin-top: 0;
+      border-radius: 8px;
+    }
+
+    @include respond(mobile){
+      margin-top: 0;
+      border-radius: 8px;
+    }
+  }
+
+  &__minus{
+    padding: 9px 16px 9px 13px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+
+    @include respond(tablet){
+      padding: 4px 11px 4px 8px;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    @include respond(mobile){
+      padding: 4px 11px 4px 8px;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+  }
+
+  &__plus{
+    padding: 9px 12px 9px 15px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+
+    @include respond(tablet){
+      padding: 4px 7px 4px 10px;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    @include respond(mobile){
+      padding: 4px 7px 4px 10px;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+  }
+
+  &__quantity{
+    padding: 0 2px;
+  }
+
+  &__order{
+    padding: 16px 0 8px;
+  }
+
+  &__sum{
+    display: flex;
+    justify-content: space-between;
+    line-height: 130%;
+    margin-bottom: 24px;
+
+    @include respond(tablet){
+      font-size: var(--mobile-medium-fs);
+      margin-bottom: 19px;
+    }
+
+    @include respond(mobile){
+      font-size: var(--mobile-medium-fs);
+      margin-bottom: 19px;
+    }
+  }
+
+  &__btn-order button{
+    color: var(--card-color);
+    line-height: 100%;
+    border-radius: 12px;
+    background-color: var(--accent-color);
+    padding: 0.75rem 4.47rem;
+
+    &:hover{
+      background-color: var(--light-color);
+    }
+
+    &:active{
+      background-color: var(--tab-color);
+    }
+
+    @include respond(tablet){
+      font-size: var(--mobile-medium-fs);
+      padding: 0.5625rem 5.82rem;
+    }
+
+    @include respond(mobile){
+      font-size: var(--mobile-medium-fs);
+      padding: 0.5625rem 5.82rem;
+    }
+  }
+
+  &__inner-bot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__free-delivery{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: var(--mobile-medium-fs);
+
+    &img{
+      max-width: 24px;
+    }
+
+    @include respond(tablet){
+      font-size: var(--mobile-small-fs);
+    }
+
+    @include respond(mobile){
+      font-size: var(--mobile-small-fs);
+    }
+  }
+
+  &__close-mobile{
+    display: none;
+    font-size: var(--mobile-small-fs);
+    color: var(--weight-color);
+
+    @include respond(tablet){
+      display: block;
+    }
+
+    @include respond(mobile){
+      display: block;
+    }
+  }
+}
+
